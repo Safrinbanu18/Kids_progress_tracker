@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../MentalHealthChatbot/.venv"
+		},
+		{
+			"path": "../MentalHealthChatbot/.vscode"
+		},
+		{
+			"path": "../MentalHealthChatbot/__pycache__"
+		},
+		{
+			"path": "../MentalHealthChatbot/instance"
+		},
+		{
+			"path": "../MentalHealthChatbot/migrations"
+		},
+		{
+			"path": "../MentalHealthChatbot/static"
+		},
+		{
+			"path": "../MentalHealthChatbot/templates"
+		},
+		{
+			"path": "../MentalHealthChatbot/venv"
+		}
+	]
+}

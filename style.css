@@ -1,0 +1,138 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #6c6c6b, #ff6b6b);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(14, 13, 13, 0.15);
+  padding: 40px;
+  border-radius: 25px;
+  width: 420px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: rgb(253, 7, 7);
+  text-shadow: 0 0 10px #fff59d;
+}
+
+.intro {
+  font-size: 14px;
+  color: #f1f1f1;
+  margin-bottom: 15px;
+}
+
+.level {
+  background: rgba(16, 14, 14, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.level:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+
+/* Signal Light circles */
+.signal {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid white;
+}
+
+.signal.red {
+  background-color: #ff3b3b;
+  box-shadow: 0 0 10px #ff3b3b;
+}
+
+.signal.yellow {
+  background-color: #ffeb3b;
+  box-shadow: 0 0 10px #ffeb3b;
+}
+
+.signal.green {
+  background-color: #00e676;
+  box-shadow: 0 0 10px #00e676;
+}
+
+button {
+  background-color: #00ffcc;
+  border: none;
+  color: black;
+  padding: 8px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.7);
+}
+
+button:hover {
+  background-color: #fff;
+  color: #1e1a4b;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+#reward {
+  font-size: 24px;
+  margin-top: 20px;
+  animation: starPop 1s ease;
+  color: #ffeb3b;
+}
+
+/* 🎉 Final Reward for Completing All Levels */
+#final-reward {
+  font-size: 26px;
+  margin-top: 20px;
+  color: #ffd700;
+  text-shadow: 0 0 15px #fff59d, 0 0 30px #ffeb3b;
+  animation: fireworks 1s ease forwards;
+}
+
+#final-reward span 
+{ display: inline-block;
+  margin: 0 5px;
+  animation: starBounce 0.8s infinite alternate;
+}
+
+@keyframes starPop {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes starBounce {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-15px) scale(1.2); }
+  100% { transform: translateY(0) scale(1); }
+}
+@keyframes fireworks {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
